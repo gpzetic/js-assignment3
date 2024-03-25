@@ -23,13 +23,18 @@ class Pizza {
 
     describe() {
         if (this.sauce.length == 0) {
-            this.sauce = 'no';
-            
+            this.sauce = 'no'; 
         }
         else {
             this.sauce = this.sauce.join(', ');
         }
-        return `You ordered a ${this.size} pizza with ${this.toppings.join(', ')} and ${this.sauce} sauce.`;
+        if (this.toppings.length == 0) {
+            this.toppings = 'no'; 
+        }
+        else {
+            this.toppings = this.toppings.join(', ');
+        }
+        return `You ordered a ${this.size} pizza with ${this.toppings} and ${this.sauce} sauce.`;
     }
 }
 
