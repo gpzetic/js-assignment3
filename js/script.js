@@ -22,10 +22,14 @@ class Pizza {
     }
 
     describe() {
-        if (this.sauce == '') {
+        if (this.sauce.length == 0) {
             this.sauce = 'no';
+            
         }
-        return `You ordered a ${this.size} pizza with ${this.toppings.join(', ')} and ${this.sauce.join(', ')} sauce.`;
+        else {
+            this.sauce = this.sauce.join(', ');
+        }
+        return `You ordered a ${this.size} pizza with ${this.toppings.join(', ')} and ${this.sauce} sauce.`;
     }
 }
 
