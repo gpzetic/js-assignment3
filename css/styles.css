@@ -7,9 +7,33 @@ body {
 }
 /* Form */
 #pizzaForm {
-    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
-    background-color: #f2f2f2;
     padding: 20px;
+    border-radius: 8px;
+    z-index: 2;
+    text-shadow: 1px 1px 5px white;
+    position: relative;
+}
+
+#formBack {
+    background-image: url(../images/pizza.jpg);
+    background-position: center;
+    background-size: 100%;
+    filter: blur(2px);
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+#wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
     border-radius: 8px;
 }
 
