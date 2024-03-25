@@ -22,6 +22,9 @@ class Pizza {
     }
 
     describe() {
+        if (this.sauce == '') {
+            this.sauce = 'no';
+        }
         return `You ordered a ${this.size} pizza with ${this.toppings.join(', ')} and ${this.sauce.join(', ')} sauce.`;
     }
 }
