@@ -3,9 +3,9 @@ const pizzaOutput = document.getElementById('pizzaOutput');
 const orderButton = document.getElementById('orderButton');
 // Wait until the page loads
 window.addEventListener('DOMContentLoaded', (event) => {
-    studentInfoDiv.innerHTML = `<p>Student ID: 1217611 - Name: Grayson Zetic</p>`;
     // Order onclick makes the pizza and tells user what they ordered
     orderButton.addEventListener('click', function() {
+        studentInfoDiv.innerHTML = `<p>Student ID: 1217611 - Name: Grayson Zetic</p>`;
         const size = document.getElementById('size').value;
         const toppings = Array.from(document.querySelectorAll('input[name="toppings"]:checked')).map(e => e.value);
         const sauce = Array.from(document.querySelectorAll('input[name="sauce"]:checked')).map(e => e.value);
