@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Maker</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <div id="student-info"></div>
+    <!-- Pizza form -->
+    <form id="pizzaForm">
+        <h2>Create Your Pizza</h2>
+        <p><label><strong>Size:</strong>
+            <select name="size" id="size">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+        </label></p>
+        <p><label><strong>Toppings:</strong>
+            <input type="checkbox" name="toppings" value="Pepperoni"> Pepperoni
+            <input type="checkbox" name="toppings" value="Mushrooms"> Mushrooms
+            <input type="checkbox" name="toppings" value="Onions"> Onions
+            <input type="checkbox" name="toppings" value="Pickles"> Pickles
+        </label></p>
+        <p><button type="button" id="orderButton">Order</button></p>
+    </form>
+    <div id="pizzaOutput"></div>
+</body>
+</html>
+
